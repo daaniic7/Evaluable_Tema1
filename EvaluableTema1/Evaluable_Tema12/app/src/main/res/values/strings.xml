@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Evaluable_Tema1</string>
+    <string name="volver_atras">ATRAS</string>
+
+    <string name="preferencia_compartida">fichero_compartido</string>
+    <string name="numero_telefono">telefono</string>
+
+    <string name="llamar">Llamar</string>
+</resources>

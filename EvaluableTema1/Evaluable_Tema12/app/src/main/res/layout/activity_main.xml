@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1C1F2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Imagen superior de la aplicación -->
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/fondo" />
+<!--GridLayout que almacenará en su interior los diferentes ImageView correspondientes
+a los botones -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2">
+
+            <!-- Botones en forma de ImageView -->
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="#F40101"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@android:drawable/stat_sys_phone_call" /> <!--Icono de teléfono-->
+
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="#49BCE6"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/alarm" /> <!--Icono de alarma-->
+
+
+            <ImageView
+                android:id="@+id/iv6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="#2FDE56"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/finalspace" /> <!--Icono para la pagina web sacado de una imagen guardada en la carpeta drawable-->
+
+
+            <ImageView
+                android:id="@+id/iv_extra"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="#FFC107"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@android:drawable/ic_menu_help" /> <!--Icono para el botón extra de una imagen guardada en la carpeta drawable-->
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
